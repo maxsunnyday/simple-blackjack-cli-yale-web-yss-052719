@@ -33,6 +33,7 @@ end
 def hit?(currentcard_total)
   prompt_user
   input = get_user_input
+  puts currentcard_total
     if input == 's'
       currentcard_total = currentcard_total
       return currentcard_total
@@ -62,7 +63,7 @@ def runner
   welcome
   total = initial_round
   #until total > 21
-  hit?(10)
+  hit?(total)
   #end
   #end_game(currentcard_total)
 end
