@@ -39,8 +39,10 @@ def hit?(currentcard_total)
       puts currentcard_total
     elsif input == 'h'
       puts currentcard_total
+      display_card_total(currentcard_total)
       new_card = deal_card
       currentcard_total = currentcard_total + new_card
+      display_card_total(currentcard_total)
       return currentcard_total
       puts currentcard_total
     else
