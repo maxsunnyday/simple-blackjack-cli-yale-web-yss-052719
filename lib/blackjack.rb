@@ -42,7 +42,6 @@ def hit?(currentcard_total)
       invalid_command
     end
   return currentcard_total
-  puts currentcard_total
 end
 
 def invalid_command
@@ -56,9 +55,9 @@ end
 
 def runner
   welcome
-  total = initial_round
+  currentcard_total = initial_round
   #until total > 21
-  hit?(total)
+  hit?(currentcard_total)
   #end
-  end_game(total)
+  end_game(currentcard_total)
 end
