@@ -56,7 +56,7 @@ end
 
 def runner
   welcome
-  #currentcard_total = initial_round
+  initial_round
   #until total > 21
   hit?(10)
   #end
