@@ -37,11 +37,11 @@ def hit?(currentcard_total)
       end_game(currentcard_total)
     elsif input == 'h'
       new_card = deal_card
-      total = currentcard_total + new_card
+      currentcard_total = currentcard_total + new_card
     else
       invalid_command
     end
-  return total
+  return currentcard_total
 end
 
 def invalid_command
